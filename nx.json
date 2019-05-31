@@ -10,6 +10,12 @@
   "projects": {
     "ng-ui": {
       "tags": ["radh"]
+    },
+    "demo-e2e": {
+      "tags": []
+    },
+    "demo": {
+      "tags": ["radh"]
     }
   }
 }

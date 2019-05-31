@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "radhNx", "camelCase"],
+    "component-selector": [true, "element", "radh-nx", "kebab-case"]
+  }
+}
