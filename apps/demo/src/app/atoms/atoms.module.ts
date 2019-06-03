@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AutocompleteComponent } from './components/autocomplete.component';
 import { ColorPickerExampleComponent } from './components/color-picker-example.component';
@@ -8,6 +9,7 @@ import { HelloExampleComponent } from './components/hello-example.component';
 import { InputValidationExampleComponent } from './components/input-validation-example.component';
 import { LazyImagesExampleComponent } from './components/lazy-images-example.component';
 import { ModalExampleComponent } from './components/modal-example.component';
+import { InputValidationDirective } from './input-validation.directive';
 
 const routes: Routes = [
   {
@@ -32,10 +34,11 @@ const routes: Routes = [
     InputValidationExampleComponent,
     LazyImagesExampleComponent,
     CounterExampleComponent,
-    ModalExampleComponent
+    ModalExampleComponent,
+    InputValidationDirective,
   ],
   imports: [
-    CommonModule, RouterModule.forChild(routes)
+    CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

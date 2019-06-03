@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-input-validation-example',
@@ -6,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
 
     <h2>Inputs with validation</h2>
 
-    <radh-input [validator]="validator" (changed)="changeInput($event)"></radh-input>
+    <radh-input [validator]="validator" (changed)="changeInput($event)" [formControl]="inputV"></radh-input>
+    <p>Angular Reactive Form Example --> Valid (required): {{inputV.valid}}</p>
     `
 })
 
 export class InputValidationExampleComponent implements OnInit {
     validator: any;
+
+    inputV = new FormControl('', Validators.required);
 
     constructor() { }
 
