@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "radh-ng"
+  },
+  "targets": {
+    "radh-ng": {
+      "hosting": {
+        "demo": [
+          "radh-ng"
+        ]
+      }
+    }
+  }
+}
