@@ -47,7 +47,10 @@
     "@types/reflect-metadata": "^0.1.0",
     "@types/zone.js": "^0.5.12",
     "document-register-element": "1.13.1",
-    "reflect-metadata": "^0.1.12"
+    "reflect-metadata": "^0.1.12",
+    "@types/firebase": "^3.2.1",
+    "firebase": "^5.10.1",
+    "radh-ui": "^1.31.0"
   },
   "devDependencies": {
     "jest-preset-angular": "7.0.0",

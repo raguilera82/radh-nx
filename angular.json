@@ -43,7 +43,12 @@
             "main": "apps/demo/src/main.ts",
             "polyfills": "apps/demo/src/polyfills.ts",
             "tsConfig": "apps/demo/tsconfig.app.json",
-            "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
+            "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/radh-ui/dist",
+                "output": "/radh-ui/"
+              }],
             "styles": ["apps/demo/src/styles.css"],
             "scripts": []
           },
